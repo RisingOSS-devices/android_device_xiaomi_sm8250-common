@@ -251,10 +251,12 @@ vendor/etc/init/feature_enabler_client.rc
 # FM
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
 
-# Gatekeeper
-vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
-vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
-vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
+# Gatekeeper From LA.UM.9.15.2.r1-08600-KAMORTA.QSSI12.0
+vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|2e33e885b92e413440511049025497945d6b8484
+vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|d026889593faf28029f54d92176e89cb1081727d
+vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so|c1f856c8dd0c70d1b9709a0e202a041528c01f8c
+vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|81deaf3df7aabd2e7acc56807e1d7cf1f0b49cce
+
 
 # Graphics (Adreno)
 vendor/lib/egl/eglSubDriverAndroid.so
@@ -404,14 +406,19 @@ vendor/lib64/vendor.qti.imsrtpservice@3.0.so
 vendor/bin/msm_irqbalance
 vendor/etc/msm_irqbalance.conf
 
-# Keymaster
-vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
-vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc
-vendor/lib64/libkeymasterdeviceutils.so
-vendor/lib64/libkeymasterprovision.so
-vendor/lib64/libkeymasterutils.so
-vendor/lib64/libqtikeymaster4.so
-vendor/lib64/libspcom.so
+# Keymaster from LA.UM.9.15.2.r1-08600-KAMORTA.QSSI12.0
+vendor/bin/hw/android.hardware.keymaster@4.0-service-qti|546406dcc471774c3ed934ebbf1f9bdf6636e797
+vendor/bin/hw/android.hardware.keymaster@4.1-service-qti|b7535b45d5874263fca28713cdcdcf1c6539e216
+vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc|9b12d723d880c68af58d6654c8a96cb11382676c
+vendor/lib/libkeymasterdeviceutils.so|747c11214cebae3a62c35528adb69828ec72d320
+vendor/lib/libkeymasterprovision.so|de64e99db0373e46850f8ece29aafc3273be9e40
+vendor/lib/libkeymasterutils.so|c3750feb3b5f17b5d9b60e0cbb2cc976bbc1f8b0
+vendor/lib/libqtikeymaster4.so|427a2594752e2b6b5cdedb6f347f3307e63f0496
+vendor/lib64/libkeymasterdeviceutils.so|15af23f261554c47b5f490f0fe68c15abe87cda8
+vendor/lib64/libkeymasterprovision.so|03d39d7308db350acfbca5313908e88ffa13c1c5
+vendor/lib64/libkeymasterutils.so|572e22dd69debd0f64c5df9f723276f0184e36cc
+vendor/lib64/libqcbor.so|7da5294a577f5a71ede5b3804a026bf69bd025ee
+vendor/lib64/libqtikeymaster4.so|090018b0001a7a8fbcb62e1ce06c6fffb12c00ba
 
 # Listen
 vendor/lib/hw/sound_trigger.primary.kona.so
@@ -630,7 +637,6 @@ vendor/lib64/libnetmgr_rmnet_ext.so
 vendor/lib64/libnlnetmgr.so
 vendor/lib64/libpdmapper.so
 vendor/lib64/libpdnotifier.so
-vendor/lib64/libqcbor.so
 vendor/lib64/libqcrilFramework.so
 vendor/lib64/libqcrildatactl.so
 vendor/lib64/libqrtr.so
