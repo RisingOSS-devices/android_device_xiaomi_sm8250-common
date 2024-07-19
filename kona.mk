@@ -166,6 +166,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     liblz4.vendor
 
+ifneq ($(TARGET_IS_APERTURE),true)
+PRODUCT_PACKAGES += \
+    Aperture
+endif
+
 # Configstore
 PRODUCT_PACKAGES += \
     disable_configstore
