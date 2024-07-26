@@ -217,6 +217,16 @@
         <item>"/system/bin/surfaceflinger"</item>
     </string-array>
 
+    <string-array name="config_certifiedBuildProperties" translatable="false">
+        <item>MANUFACTURER:askey</item>
+        <item>BRAND:ADT-3</item>
+        <item>DEVICE:adt3</item>
+        <item>PRODUCT:adt3_gtv</item>
+        <item>MODEL:ADT-3</item>
+        <item>FINGERPRINT:ADT-3/adt3_gtv/adt3:S/SPP2.210219.010/7201729:user/release-keys</item>
+        <item>SECURITY_PATCH:2021-03-05</item>
+    </string-array>
+     
     <!-- Should the pinner service pin the Home application? -->
     <bool name="config_pinnerHomeApp">true</bool>
 
