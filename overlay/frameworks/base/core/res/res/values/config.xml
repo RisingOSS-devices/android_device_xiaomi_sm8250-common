@@ -351,4 +351,28 @@
     <!-- Path to fast charging status file to detect whether an oem fast charger is active -->
     <string name="config_oemFastChargerStatusPath" translatable="false">/sys/class/power_supply/bms/fastcharge_mode</string>
 
+    <!-- Enables or disables fading edges when marquee is enabled in TextView.
+    Off by default, since the framebuffer readback used to implement the
+    fading edges is prohibitively expensive on most GPUs. -->
+    <bool name="config_ui_enableFadingMarquee">true</bool>
+
+    <!-- The max scale for the wallpaper when it's zoomed in -->
+    <item name="config_wallpaperMaxScale" format="float" type="dimen">1</item>
+
+     <!-- The list of components which should be automatically disabled for a specific device. -->
+    <string-array name="config_deviceDisabledComponents" translatable="false">
+        <item>com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver</item>
+        <item>com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver</item>
+    </string-array>   
+
+    <!-- SettingsGoogle -->
+    <bool name="config_adaptive_alert_vibration_enabled">true</bool>
+    <bool name="config_battery_first_use_date_enabled">true</bool>
+    <bool name="config_connectivity_helper_call_quality_default_value">true</bool>
+    <bool name="config_connectivity_helper_d2d_default_value">true</bool>
+    <bool name="config_show_connectivity_helper_call_quality">true</bool>
+    <bool name="config_show_connectivity_helper_d2d">true</bool>
+    <bool name="config_show_reverse_charging">true</bool>
+    <bool name="config_show_touch_sensitivity">true</bool>
+     
 </resources>
