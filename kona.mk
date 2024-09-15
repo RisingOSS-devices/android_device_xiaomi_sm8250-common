@@ -166,10 +166,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     liblz4.vendor
 
-ifneq ($(TARGET_IS_APERTURE),true)
+# Aperture 
 PRODUCT_PACKAGES += \
     Aperture
-endif
 
 # Configstore
 PRODUCT_PACKAGES += \
